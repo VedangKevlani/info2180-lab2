@@ -1,8 +1,15 @@
+* {
+    box-sizing: inherit;
+}
+
 html, body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     height: 100%;
+    min-height: 100vh;
 }
 
 .container {
@@ -74,7 +81,9 @@ h4 {
 .blog-para {
     grid-area: main;
     justify-content: center;
-    display: block;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
 }
 
 .blog-one-image {
@@ -117,6 +126,7 @@ li {
 }
 
 footer {
+    padding: 20px;
     grid-area: footer;
     background-color: #2C5282;
     color: #FFFFFF;
